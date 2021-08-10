@@ -3,8 +3,8 @@
 const apiKey = "&APPID=b1092f3e717c5861513554d16c317fe3&units=imperial";
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?q=";
 // Create a new date instance dynamically with JS
-let d = new Date();
-let newDate = d.getMonth() + '/' + d.getDate() + '/' + d.getFullYear();
+let day = new Date();
+let newDate = (day.getMonth() + 1) + '/' + day.getDate() + '/' + day.getFullYear();
 const userInfo = document.getElementById('userInfo');
 
 // Event listener to add function to existing HTML DOM element
